@@ -1,62 +1,5 @@
-var morseCode = {
-    A: ".-",
-    B: "-...",
-    C: "-.-.",
-    D: "-..",
-    E: ".",
-    F:"..-.",
-    G: "--.",
-    H: "....",
-    I: "..",
-    J: ".---",
-    K: "-.-",
-    L: ".-..",
-    M: "--",
-    N: "-.",
-    O: "---",
-    P: ".--.",
-    Q: "--.-",
-    R: ".-.",
-    S: "...",
-    T: "-",
-    U: "..-",
-    V: "...-",
-    W: ".--",
-    X: "-..-",
-    Y: "-.--",
-    Z: "--..",
-}
-
-var morseToEnglish = {
-    ".-": "A",
-    "-...": "B",
-    "-.-.": "C",
-    "-..": "D",
-    ".": "E",
-    "..-.": "F",
-    "--.": "G",
-    "....": "H",
-    "..": "I",
-    ".---": "J",
-    "-.-": "K",
-    ".-..": "L",
-    "--": "M",
-    "-.": "N",
-    "---": "O",
-    ".--.": "P",
-    "--.-": "Q",
-    ".-.": "R",
-    "...": "S",
-    "-": "T",
-    "..-": "U",
-    "...-": "V",
-    ".--": "W",
-    "-..-": "X",
-    "-.--": "Y",
-    "--..": "Z",
-}
-
 import { Morsecode } from './translator.js'
+import { morseCode, morseToEnglish } from './data.js';
 
 const wordToTranslate = document.querySelector(".text");
 
@@ -74,8 +17,3 @@ translateToEnglishButton.addEventListener("click", () => {
     // translate.translateToEnglish(wordToTranslate.value)
     document.querySelector('#translation').innerText = translate.translateToEnglish(wordToTranslate.value)
 })
-
-// const lowerCase = document.querySelector(".text", () => {
-//     if (textInput = lowerCase)
-//     return valid
-// }

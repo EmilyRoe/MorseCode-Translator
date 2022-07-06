@@ -4,7 +4,7 @@ export class Morsecode {
     this.morseToEnglish = morseToEnglish;
   }
   translateToMorse(textInput) {
-    const formattedText = textInput.toUpperCase();
+    const formattedText = textInput.toUpperCase().trim().replace(" ", "");
     return formattedText
       .split("")
       .map((letter) => {
@@ -16,13 +16,11 @@ export class Morsecode {
 
   translateToEnglish(textInput) {
       console.log(textInput)
-    return textInput
-      .split(" ")
-      .map((code) => {
-        // document.getElementById("translation").innerHTML=(this.morseToEnglish[code]);
-        console.log(this.morseToEnglish[code])
-        return this.morseToEnglish[code];
-      })
-      .join("");
+      const stringCharacters = textInput.split(" ");
+      console.log(stringCharacters)
+      let convertedCharacters = stringCharacters.map(character => {
+        return this.morseToEnglish[character];
+      }).join("");
+      return convertedCharacters;
   }
 }

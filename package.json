@@ -1,0 +1,26 @@
+{
+  "name": "morse-code-translator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmilyRoe/MorseCode-Translator.git"
+  },
+  "keywords": [],
+  "author": "Emily Roe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmilyRoe/MorseCode-Translator/issues"
+  },
+  "homepage": "https://github.com/EmilyRoe/MorseCode-Translator#readme",
+  "devDependencies": {
+    "jest": "^28.1.2"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.18.6"
+  }
+}
